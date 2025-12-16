@@ -8,23 +8,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header class="site-header">
+            <div class="site-brand"><h1>Cinéma du Village</h1></div>
             <nav>
-                <div>
-                    <a href="index.html">Accueil</a>
-                </div>
-                <div>
-                    Recherche
-                </div>
+                <a href="index.html">Accueil</a>
+                <a href="search.html">Recherche</a>
             </nav>
         </header>
-        <main>
-            <div class="affiche">
-
-            </div>
-            <button>Charger plus</button>
+        <main>  
+            <div class="affiche" aria-live="polite"></div>
+            <button id="loadMore">Charger plus</button>
         </main>
-        
+        <footer class="site-footer"><small>© Cinéma du Village — Tous droits réservés</small></footer>
+        <script type="module" src="index_sc.js"></script>
+
     </body>
 
-</html>
+</html> 
