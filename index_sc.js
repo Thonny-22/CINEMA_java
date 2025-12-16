@@ -16,7 +16,7 @@ const trendingTitles = [
 const container = document.querySelector(".affiche");
 const loadBtn =
   document.querySelector("#loadMore") || document.querySelector("button");
-let nextIndex = 0; // pointer into trendingTitles for infinite loading
+let nextIndex = 0;
 const perLoad = 3;
 
 function createCard(movie) {
@@ -60,7 +60,6 @@ async function loadMore() {
     }
     nextIndex++;
   }
-  // never hide load button — allow infinite loading (may repeat titles)
 }
 
 loadBtn.addEventListener("click", (e) => {
@@ -68,7 +67,6 @@ loadBtn.addEventListener("click", (e) => {
   loadMore();
 });
 
-// initial load
 document.addEventListener("DOMContentLoaded", () => {
   loadMore();
 });
