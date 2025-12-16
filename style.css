@@ -13,8 +13,11 @@ body{
 }
 header{
     background-color: darkgray;
-    display: flex;
-    justify-content: space-around;
     border-radius: 1.4em;
-    margin: 1em;
+    margin: 0.6em;
+}
+nav{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
 }
